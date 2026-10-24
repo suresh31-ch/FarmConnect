@@ -1,0 +1,105 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "User profile information and role badges",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "phone": { "type": "string" },
+        "location": { "type": "string" },
+        "verified": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "name", "email"]
+    },
+    "listings": {
+      "title": "Produce Listings",
+      "description": "Farm produce available for purchase in marketplace",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "farmerId": { "type": "string" },
+        "farmerName": { "type": "string" },
+        "price": { "type": "number" },
+        "unit": { "type": "string" },
+        "quantity": { "type": "number" },
+        "location": { "type": "string" },
+        "qualityGrade": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "organic": { "type": "boolean" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["title", "farmerId", "price", "unit"]
+    },
+    "orders": {
+      "title": "Orders & Escrow",
+      "description": "Produce transaction records with escrow payment status",
+      "type": "object",
+      "properties": {
+        "listingId": { "type": "string" },
+        "buyerId": { "type": "string" },
+        "buyerName": { "type": "string" },
+        "farmerId": { "type": "string" },
+        "produceTitle": { "type": "string" },
+        "quantity": { "type": "number" },
+        "totalPrice": { "type": "number" },
+        "status": { "type": "string" },
+        "escrowStatus": { "type": "string" },
+        "deliveryAddress": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["listingId", "buyerId", "totalPrice", "status"]
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "System alerts, order updates and price notifications",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "message": { "type": "string" },
+        "type": { "type": "string" },
+        "read": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "title", "message"]
+    },
+    "worker_jobs": {
+      "title": "Worker Jobs",
+      "description": "Agricultural labor gig postings",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "employerId": { "type": "string" },
+        "location": { "type": "string" },
+        "dailyWage": { "type": "number" },
+        "requiredWorkers": { "type": "number" },
+        "status": { "type": "string" },
+        "category": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["title", "employerId", "dailyWage"]
+    },
+    "advisories": {
+      "title": "Knowledge & Advisories",
+      "description": "Crop guides and farming best practices",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "crop": { "type": "string" },
+        "author": { "type": "string" },
+        "category": { "type": "string" },
+        "content": { "type": "string" },
+        "likes": { "type": "number" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["title", "content"]
+    }
+  }
+}

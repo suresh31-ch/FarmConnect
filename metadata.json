@@ -1,0 +1,6 @@
+{
+  "name": "FarmConnect",
+  "description": "AI Powered Smart Agriculture Ecosystem connecting farmers, consumers, workers, delivery partners, equipment owners, and livestock sellers.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
