@@ -165,3 +165,9 @@ Contributions and suggestions are welcome.
 License
 
 The project license will be specified when a license is selected.
+## Project Screenshots
+working crop disease prototype screenshot from farmconnect ai app:
+<p align="center">
+  <img src="Screenshot%202026-11-15%20222540.png" width="48%">
+  <img src="Screenshot%202026-11-15%20222636.png" width="48%">
+</p>
